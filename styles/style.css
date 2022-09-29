@@ -21,4 +21,32 @@ body{
 
 .city-pic{
     width: 300px;
+    height: 300px;
+}
+
+footer{
+    background-color: darkslategrey;
+    color: lightcyan;
+}
+.second-p{
+    background-color: coral;
+}
+
+/* =/=we can select element by their ID */
+#riga-landscape{
+    background-color: #605c40;
+    color: beige; 
+}
+
+.thin-dark-border{
+border: 2px #1d1713;
+border-style: solid;
+}
+
+.rounded-corners{
+    border-radius: 5px;
+}
+
+.circual-image{
+    border-radius: 50%;
 }
