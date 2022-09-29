@@ -1,3 +1,11 @@
 article{
     background-color: aquamarine;
 }
+p{
+    font-size: 12px;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+}
+body{
+    /* font-family: 'Courier New', Courier, monospace;= */
+    font-family: Arial, Helvetica, sans-serif;
+}
