@@ -17,3 +17,8 @@ body{
     /* font-family: 'Courier New', Courier, monospace;= */
     font-family: Arial, Helvetica, sans-serif;
 }
+/* you can select specific images */
+
+.city-pic{
+    width: 300px;
+}
