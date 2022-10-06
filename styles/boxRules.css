@@ -1,0 +1,7 @@
+.mydiv {
+    background-color: rgb(114, 176, 230);
+border: 2px solid darkslategrey;
+}
+.myinline1 {
+    text-decoration: double underline;
+}
