@@ -2,6 +2,28 @@
     background-color: rgb(114, 176, 230);
 border: 2px solid darkslategrey;
 }
-.myinline1 {
+.myinline1{
     text-decoration: double underline;
+    font-weight: bold;
+    /* inline elements do not have width and heights*/
+}
+
+.myclass02{
+    width: 300px;
+    height: 300px;
+    /* block elements respect width and height*/
+}
+
+/* there is inline block element that is a mix of inline and block*/
+
+.myinline2 {
+ display: inline-block;
+ width: 200px;
+ height: 200px;
+ background-color: brown;
+/* inline box with height and width*/
+}
+.myclass04 {
+    /*we can hide elements as well*/
+    display: none;
 }
