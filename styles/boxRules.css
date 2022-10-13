@@ -61,8 +61,17 @@ border: 2px solid darkslategrey;
     margin: 10px;
 }
 
+.box3{
+position: absolute;
+top: 5px;
+bottom: 5px;
+
+
+}
 .box4{
     position: relative;
-    top: 3px;
-    left: 19px;
+    right: 10px;
+    bottom: 8px;
+  /*  top: 3px;
+    left: 19px;*/
 }
