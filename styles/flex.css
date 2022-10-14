@@ -1,0 +1,44 @@
+.my-flex-container{
+    min-height: 600px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    /*if you want your child to wrap, use flex-wrap*/
+    flex-wrap: wrap;
+    /*to justify content use space-around8*/
+    justify-content: space-around;
+    /*to align items usea align-items(center, strech utt) */
+    /*align-items: flex-start;*/
+
+    /*to align content, its useful to have more than one row*/
+    /*align-content: center;8*/
+    align-content: space-around;
+}
+
+.child {
+    width: 100px;
+    /*if you dont want squeezing*/
+    min-width: 100px;
+    height: 100px;
+    background-color: bisque;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+.child03{
+    width: 150px;
+    min-height: 150px;
+
+}
+
+.child05{
+    width: 120px;
+}
+.child04{
+   /* order: -100; to order child first8*/
+   background-color: azure;
+
+}
+
+
+
