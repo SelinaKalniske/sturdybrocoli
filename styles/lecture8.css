@@ -68,7 +68,7 @@
     }
 }
 
-/* add media querie
+/* add media querie (need for the homweork!!)
 going mobile first from lowest to highest*/
 
 @media (min-width: 400px){
@@ -87,6 +87,13 @@ going mobile first from lowest to highest*/
         background-color: rgb(221, 169, 72);
     }
 }
+/* typical break points */
+/* 320px -480px smartphones( portrait)
+480px-768px smartphones (landscape)
+768px-1024px tablets (portrait)
+1024px-1280px tablets (landscape)
+1280px-1440px Laptops, Desktops
+1440px-2560px large screens, TV */
 
 
 
