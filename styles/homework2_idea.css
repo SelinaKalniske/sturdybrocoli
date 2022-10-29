@@ -7,7 +7,7 @@
     grid-template-areas:
     "myheader"
     "mymain"
-    "main"
+    "ad"
     "myfooter";
 }
 
@@ -44,15 +44,19 @@
 /* name boxes */
 .box-01{
     grid-area: myheader;
+    background-color: blue;
 }
 
 .box-02{
     grid-area: mymain;
+    background-color: antiquewhite;
 }
 
 .box-03{
     grid-area: ad;
+    background-color: blueviolet;
 }
 .box-04{
     grid-area: myfooter;
+    background-color: cadetblue;
 }
