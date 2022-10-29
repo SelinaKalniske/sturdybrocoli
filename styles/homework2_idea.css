@@ -1,4 +1,58 @@
 .container {
     background-color: aqua;
     display: grid;
+    grid-template-columns: 350px;
+    grid-template-rows: 100px 100px 100px;
+    /* name the area*/
+    grid-template-areas:
+    "myheader"
+    "mymain"
+    "main"
+    "myfooter";
+}
+
+.box{
+    background-color: bisque;
+}
+
+/* media querie for tablet */
+@media (min-width: 768px){
+    .container{
+        grid-template-columns: 350px 350px;
+        grid-template-rows: 100px 100px 100px;
+        /*change areas*/
+        grid-template-areas: 
+        "myheader myheader"
+        "mymain ad"
+        "myfooter myfooter";
+    }
+}
+
+/* media queries for desktop */
+@media (min-width: 992px){
+    .container{
+        grid-template-columns: 350px 1fr 350px;
+        grid-template-rows: 100px 100px 100px;
+        /*update areas*/
+        grid-template-areas: 
+        "myheader myheader myheader"
+        "mymain mymain ad" 
+        "myfooter myfooter myfooter";
+    }
+}
+
+/* name boxes */
+.box-01{
+    grid-area: myheader;
+}
+
+.box-02{
+    grid-area: mymain;
+}
+
+.box-03{
+    grid-area: ad;
+}
+.box-04{
+    grid-area: myfooter;
 }
