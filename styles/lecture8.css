@@ -13,6 +13,7 @@
 
 .box-03:hover{
     transform: scale(1.05);
+    box-shadow: 8px 7px 10px rgb(84, 79, 79);
 }
 
 .box-04:hover{
@@ -23,4 +24,32 @@
     transform: skew(10deg);
 }
 
+.box-01:hover{
+    transition: all 1s;
+    transform: scale(0.5);
+    /* we can change the way transition works*/
+}
+.box-02:hover{
+    box-shadow: 10px 10px 5px rgb(66, 62, 62);
+}
 
+.another_box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(228, 59, 197);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin{
+    /*from 0-100% */
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
