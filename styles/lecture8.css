@@ -1,0 +1,26 @@
+.boxy{
+    background-color: rgb(231, 86, 86);
+    border: 1px solid rgb(22, 21, 19);
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
+
+/* pseido class change color when you click*/
+.boxy:hover{
+    background-color: aquamarine;
+}
+
+.box-03:hover{
+    transform: scale(1.05);
+}
+
+.box-04:hover{
+    transform: rotate(10deg);
+}
+
+.box-05:hover{
+    transform: skew(10deg);
+}
+
+
