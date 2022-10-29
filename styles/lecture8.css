@@ -42,6 +42,7 @@
     justify-content: center;
     align-items: center;
     animation: spin 10s linear infinite;
+   /* animation: colorchange 5s linear infinite; */
 }
 
 @keyframes spin{
@@ -53,3 +54,18 @@
         transform: rotate(360deg);
     }
 }
+
+.outer_box{
+    animation: colorchange 5s linear alternate infinite;
+}
+
+@keyframes colorchange{
+    from{
+        background-color: blue;
+    }
+    to{
+        background-color: aqua;
+    }
+}
+
+
