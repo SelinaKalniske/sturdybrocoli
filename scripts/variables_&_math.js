@@ -74,10 +74,12 @@ console.log(10%5);
 
 //lets use promtp to make a simple temperature converter
 const celsius=parseInt(prompt("Please enter a temparature in Celsius"));
-console.log("Temperature in Celsius"+ celsius);
+console.log("Temperature in Celsius " + celsius);
 
 const farenheit= celsius*9/5+32;
-console.log("Temperature in Farenheit"+farenheit);
+console.log("Temperature in Farenheit " + farenheit);
+const tempContainer=document.querySelector('.temp-container');
+tempContainer.textContent= `Temperature in Celsius ${celsius} is ${farenheit} in Farenheit`;
 
 
 
