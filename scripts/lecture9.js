@@ -17,5 +17,5 @@ function updateName() {
   para.textContent = `Player 1: ${name}`;
   //we find first element from class results
   const resultsElement = document.querySelector('.results');
-  resultsElement.textContent = `Updated at ${Date()}`;
+  resultsElement.textContent = `Updated at ${new Date()}`;
 }
