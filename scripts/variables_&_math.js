@@ -73,10 +73,17 @@ console.log(10%5);
 //we can use modulo to find out if the number is odd or even
 
 //lets use promtp to make a simple temperature converter
-const celsius=parseInt(prompt("Please enter a temparature in Celsius"));
+//const celsius=parseInt(prompt("Please enter a temparature in Celsius"));
+//parseInt to convert string to integer
+const celsius= parseFloat(prompt("Please enter a temperature in Celsius"));
 console.log("Temperature in Celsius " + celsius);
 
-const farenheit= celsius*9/5+32;
+//to fix floating point imperfections we use toFixed() method
+// we can also use Math.round () method
+//const farenheit= Math.round(celsius*9/5+32,2); //2 means 2 decimal places
+
+const farenheit= (celsius * 1.8+32).toFixed(2); //we want 2 digits after decimal point
+
 console.log("Temperature in Farenheit " + farenheit);
 const tempContainer=document.querySelector('.temp-container');
 tempContainer.textContent= `Temperature in Celsius ${celsius} is ${farenheit} in Farenheit`;
