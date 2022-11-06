@@ -23,3 +23,4 @@ console.log(age);
 age-=5;
 console.log(age);
 
+console.log(10*10);
