@@ -13,4 +13,13 @@ console.log(age);
 const myContainer= document.querySelector('.container');
 // lets put age in container
 myContainer.textContent=age;
+// no need to print anything, it will show inside .container div text content
+
+
+age+=1; //just like age=age+1
+console.log(age);
+
+// we can use -= to subsctract from variable
+age-=5;
+console.log(age);
 
