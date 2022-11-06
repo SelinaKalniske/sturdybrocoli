@@ -23,4 +23,8 @@ console.log(age);
 age-=5;
 console.log(age);
 
-console.log(10*10);
+console.log(10*10); 
+let divResult=10/6;
+
+console.log(typeof age); //number
+console.log(typeof divResult); //number
