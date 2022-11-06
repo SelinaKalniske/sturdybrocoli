@@ -6,7 +6,6 @@
 console.log("Hello Javascript!")
 
 
-//PLAYER EXAMPLE
 
 //finding the first paragraph
 const para = document.querySelector('p');
@@ -17,6 +16,6 @@ function updateName() {
   const name = prompt('Enter a new name');
   para.textContent = `Player 1: ${name}`;
   //we find first element from class results
-  const resultsElement = document.querySelector('#results');
-  resultsElement.textContent= `Updated at ${(new Date()}`;
+  const resultsElement = document.querySelector('.results');
+  resultsElement.textContent = `Updated at ${Date()}`;
 }
