@@ -88,6 +88,15 @@ console.log("Temperature in Farenheit " + farenheit);
 const tempContainer=document.querySelector('.temp-container');
 tempContainer.textContent= `Temperature in Celsius ${celsius} is ${farenheit} in Farenheit`;
 
+//Javascript is case sensitive
+//const myVariable=10;
+//const myVariable=20;
+//console.log(myVariable);
+//console.log(myVariable);
+//above is a bad naming practise
+
+const myLongVariableName=30;
+console.log(myLongVariableName);
 
 
 
