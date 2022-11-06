@@ -1,1 +1,16 @@
 console.log("Let's explore our variables and math");
+
+
+//we use let when we know that the value will change
+let age=30;
+console.log(age);
+//increase age
+age=age+1;
+console.log(age);
+
+//we use const when the value will not change
+//the rule of thumb is to use const unless you know you need to use let
+const myContainer= document.querySelector('.container');
+// lets put age in container
+myContainer.textContent=age;
+
