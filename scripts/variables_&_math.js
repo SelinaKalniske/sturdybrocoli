@@ -92,11 +92,16 @@ tempContainer.textContent= `Temperature in Celsius ${celsius} is ${farenheit} in
 //const myVariable=10;
 //const myVariable=20;
 //console.log(myVariable);
-//console.log(myVariable);
+//console.log(myVariable);36
 //above is a bad naming practise
 
 const myLongVariableName=30;
 console.log(myLongVariableName);
+
+
+//find out lenght of my name
+console.log(myName.length);
+console.log(`My name is ${myName} and it is ${myName.length} characters long`);
 
 
 
