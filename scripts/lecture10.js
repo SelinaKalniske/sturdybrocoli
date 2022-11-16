@@ -53,3 +53,36 @@ console.log(`false || false is ${false || false}`);//false
 // ! is NOT - logical negation
 console.log(`!true is ${!true}`);//false
 console.log(`!false is ${!false}`);//true
+
+// we can use ! to flip the value of a boolean
+let myBool=true;
+console.log(`myBool is ${myBool}`);//true
+myBool=!myBool;
+console.log(`myBool is ${myBool}`);//false
+// we can keep going
+myBool=!myBool
+console.log(`myBool is ${myBool}`);// true
+
+//sometimes you will see code with !!  - double negation
+console.log(`!!true is ${!!true}`);//true
+console.log(`!!false is ${!!false}`);//false
+
+// how about 0
+console.log(`!!0 is ${!!0}`);//false - 0 is falsy and was converted to false
+
+//now we get to the fun part
+// conditional statement
+
+// if statement
+console.log(`if statement`);
+if (true) {
+    console.log(`inside if statement`);
+}
+console.log(`outside if statement`);
+
+let myVar=true;
+console.log(`if statement`);
+if (myVar) {
+    console.log(`inside if statement`);
+}
+console.log(`outside if statement`);
