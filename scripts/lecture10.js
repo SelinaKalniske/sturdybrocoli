@@ -34,7 +34,22 @@ console.log(`variable myName${myName} is less than variable anotherName${another
 
 //find ordinal number of a character
 console.log(`ordinal number of a is ${"a".charCodeAt(0)}`);//97
-
+//find ordinal number of ā character
 console.log(`ordinal number of ā is ${"ā".charCodeAt(0)}`); //257
 
+//logic operators
+// && is AND - both sides must be true - logical conjuction
+console.log(`true && true is ${true && true}`);//true
+console.log(`true && false is ${true && false}`);//false
+console.log(`false && true is ${false && true}`);//false
+console.log(`false && false is ${false && false}`);//false
 
+// || is OR - side must be true - logical disjuction
+console.log(`true || true is ${true || true}`);// true
+console.log(`true || false is ${true || false}`);//true
+console.log(`false || true is ${false || true}`);//true
+console.log(`false || false is ${false || false}`);//false
+
+// ! is NOT - logical negation
+console.log(`!true is ${!true}`);//false
+console.log(`!false is ${!false}`);//true
