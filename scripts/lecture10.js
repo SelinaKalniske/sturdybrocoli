@@ -149,7 +149,7 @@ switch (a) {
 console.log(`AFTER switch statement`);
 
 
-let myString=prompt(`Enter a String`);
+let myString=prompt(`Enter a String`); //will prompt user for input
 console.log(`before switch statement`)
 switch(myString){
     case "hello": 
