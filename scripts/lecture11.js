@@ -81,14 +81,16 @@ console.log(`After the loop i is ${i}`);
 
 let sum=0;
 let number=prompt("Enter a number to add to the sum or enter 0 to stop");
-number=parseInt(number);
+number=parseInt(number); //we need to convert string to integer
 while(number !==0){
+    console.log(`Before adding: sum is ${sum} and number is ${number}`);
     sum += number;
     number=prompt("Enter a number to add to the sum or enter 0 to stop");
     number=parseInt(number);
 }
 console.log(`the sum is ${sum}`);
 
-
-
+// lets output sum to container div
+let container=document.getElementById("container");
+container.textContent=`The sum is ${sum}`;
 
