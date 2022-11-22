@@ -66,15 +66,29 @@ console.log(`After the loop i is ${i}`);
 
 //lets ask for user input
 
-let input=prompt("Enter a number between 1 and 10");
-input=parseInt(input);
-console.log(`After parseInt input i is ${input}`);
-while(isNaN(input) ||input<1||input >10){
-    input=prompt("iNVALID input. Enter a number between 1 and 10");
-    input=parseInt(input);
-    console.log(`inside loop: After parseInt input is ${input}`);
-}
+//let input=prompt("Enter a number between 1 and 10");
+//input=parseInt(input);
+//console.log(`After parseInt input i is ${input}`);
+//while(isNaN(input) ||input<1||input >10){
+ //   input=prompt("iNVALID input. Enter a number between 1 and 10");
+ //   input=parseInt(input);
+//    console.log(`inside loop: After parseInt input is ${input}`);
+//}
 //console.log(`You entered ${input}`);
+
+
+//while loop to sum up numbers 
+
+let sum=0;
+let number=prompt("Enter a number to add to the sum or enter 0 to stop");
+number=parseInt(number);
+while(number !==0){
+    sum += number;
+    number=prompt("Enter a number to add to the sum or enter 0 to stop");
+    number=parseInt(number);
+}
+console.log(`the sum is ${sum}`);
+
 
 
 
