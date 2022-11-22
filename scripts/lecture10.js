@@ -128,5 +128,24 @@ else {
     console.log(`inside else if statement ${a}*${a}<${b}`);
 }
 
+//lets change a
+a=1;
+
+console.log(`before switch statement`);
+switch (a) {
+    case 1:
+        console.log(`inside case 1`);
+        break;
+    case 2:
+        console.log(`inside case 2`);
+        break;
+    case 3:
+        console.log(`inside case 3`);
+        break;
+        default:
+            console.log(`inside default`);
+            break;
+}
+console.log(`AFTER switch statement`);
 
 
