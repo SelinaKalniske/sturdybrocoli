@@ -80,9 +80,53 @@ if (true) {
 }
 console.log(`outside if statement`);
 
-let myVar=true;
+//let myVar=true;
+//let myVar=2*2==4; //comparison will be evaluated first then assigned to myVariable
+a=2;
+b=4;
+
 console.log(`if statement`);
-if (myVar) {
-    console.log(`inside if statement`);
+if (a*a==b) {
+    console.log(`inside if statement ${a}*${a}==${b}`);
+}
+
+else {
+   console.log(`inside else statement ${a}*${a} !== ${b}`);
 }
 console.log(`outside if statement`);
+
+
+// now we introduce else if, useful for multiple conditions
+
+console.log(`BEFORE if statement`);
+if (a*a==b);{
+    console.log(`inside if statement ${a}*${a}==${b}`);
+}
+//else if (a*a>b){
+    //console.log(`inside else if statement ${a}*${a}>${b}`);
+//}
+
+//example of NESTED if
+
+console.log(`before if statement`);
+a=2;
+let d=10;
+if (a*b==b) {
+    console.log(`inside if statement ${a}*${a}==${b}`);
+    if (d==10){
+        console.log(`inside nested if statement ${d}==10`);
+    }
+    else {
+        console.log(`inside nested else statement ${d} !==10`);
+    }
+}
+
+else if (a*a>b){
+    console.log(`inside else if statement ${a}*${a}> ${b}`);
+}
+else {
+    console.log(`inside else if statement ${a}*${a}<${b}`);
+}
+
+
+
