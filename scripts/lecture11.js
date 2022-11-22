@@ -69,8 +69,12 @@ console.log(`After the loop i is ${i}`);
 let input=prompt("Enter a number between 1 and 10");
 input=parseInt(input);
 console.log(`After parseInt input i is ${input}`);
-while(input<1|| input>10){
+while(isNaN(input) ||input<1||input >10){
     input=prompt("iNVALID input. Enter a number between 1 and 10");
+    input=parseInt(input);
+    console.log(`inside loop: After parseInt input is ${input}`);
 }
-console.log(`You entered ${input}`);
+//console.log(`You entered ${input}`);
+
+
 
