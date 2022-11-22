@@ -91,6 +91,6 @@ while(number !==0){
 console.log(`the sum is ${sum}`);
 
 // lets output sum to container div
-let container=document.getElementById("container");
+let container=document.querySelectorAll("container"); //finds first element in class container
 container.textContent=`The sum is ${sum}`;
 
