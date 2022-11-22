@@ -149,3 +149,19 @@ switch (a) {
 console.log(`AFTER switch statement`);
 
 
+let myString=prompt(`Enter a String`);
+console.log(`before switch statement`)
+switch(myString){
+    case "hello": 
+    console.log(`inside case hello`);
+    break;
+    case "world":
+        console.log(`inside case world`);
+        break;
+    default:
+        console.log(`inside default you entered ${myString}`);
+        break;
+}
+
+
+
