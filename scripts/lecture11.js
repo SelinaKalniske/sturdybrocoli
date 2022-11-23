@@ -1,6 +1,7 @@
 console.log(`looping constructors`);
 
 let i = 0;
+const WhileLoopElement=document.getElementById("displayWhile");
 while(i < 10){
     console.log(i);
     i++;
@@ -87,10 +88,10 @@ for (let i=0; 1<10; i++) {
 console.log(`after the loop i is ${i}`);
 
 //lets try this with different iterator
-for(let j=0; 1<10; j++){
-    console.log(j)
-}
-console.log(`after the loop i is ${j}`);
+//for(let j=0; 1<10; j++){
+    //console.log(j)
+//}
+//console.log(`after the loop i is ${j}`);
 
 //we need to use j outside the loop so we should have to declare it outside the loop
  let j=0;
