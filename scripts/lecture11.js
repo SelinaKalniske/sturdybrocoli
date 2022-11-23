@@ -79,18 +79,11 @@ console.log(`After the loop i is ${i}`);
 
 //while loop to sum up numbers 
 
-let sum=0;
-let number=prompt("Enter a number to add to the sum or enter 0 to stop");
-number=parseInt(number); //we need to convert string to integer
-while(number !==0){
-    console.log(`Before adding: sum is ${sum} and number is ${number}`);
-    sum += number;
-    number=prompt("Enter a number to add to the sum or enter 0 to stop");
-    number=parseInt(number);
-}
-console.log(`the sum is ${sum}`);
+// so lets look at for loops, when you know how many times you will loop
 
-// lets output sum to container div
-let container=document.querySelectorAll("container"); //finds first element in class container
-container.textContent=`The sum is ${sum}`;
+for (let i=0; 1<10; i++) {
+    console.log(i);
+}
+console.log(`after the loop i is ${i}`);
+
 
