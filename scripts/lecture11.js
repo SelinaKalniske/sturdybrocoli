@@ -86,4 +86,17 @@ for (let i=0; 1<10; i++) {
 }
 console.log(`after the loop i is ${i}`);
 
+//lets try this with different iterator
+for(let j=0; 1<10; j++){
+    console.log(j)
+}
+console.log(`after the loop i is ${j}`);
+
+//we need to use j outside the loop so we should have to declare it outside the loop
+ let j=0;
+ for(; j<10; j++){ // notice empty initialization - ;
+    console.log(j);
+ }
+ console.log(`after the loop i is ${j}`);
+
 
