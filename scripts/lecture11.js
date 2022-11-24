@@ -81,9 +81,10 @@ console.log(`After the loop i is ${i}`);
 //while loop to sum up numbers 
 
 // so lets look at for loops, when you know how many times you will loop
-
+const forLoopElement=document.getElementById("foorLoop")
 for (let i=0; 1<10; i++) {
     console.log(i);
+    forLoopElement.textContent += i+ " ";
 }
 console.log(`after the loop i is ${i}`);
 
