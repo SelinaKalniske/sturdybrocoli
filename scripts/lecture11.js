@@ -101,4 +101,15 @@ console.log(`after the loop i is ${i}`);
  }
  console.log(`after the loop i is ${j}`);
 
+ // continue statement skips the rest of the code in the loop and goes to next iteration
+ for(let i=0; i<10; i++);{
+ if(i==5){
+    console.log(`i is 5 so I am skipping the rest of the code in the loop`);
+    continue;
+ }
+ console.log(i);
+}
+
+
+
 
