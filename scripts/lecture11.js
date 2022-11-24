@@ -5,6 +5,7 @@ const WhileLoopElement=document.getElementById("displayWhile");
 while(i < 10){
     console.log(i);
     i++;
+     WhileLoopElement.textContent += i + " ";
 }
 console.log("After the loop i is " + i);
 console.log(`After the loop i is ${i}`); //its same as above
@@ -81,10 +82,10 @@ console.log(`After the loop i is ${i}`);
 //while loop to sum up numbers 
 
 // so lets look at for loops, when you know how many times you will loop
-const forLoopElement=document.getElementById("foorLoop")
+const forLoopElement=document.getElementById("foorLoop");
 for (let i=0; 1<10; i++) {
     console.log(i);
-    forLoopElement.textContent += i+ " ";
+    forLoopElement.textContent += i + " ";
 }
 console.log(`after the loop i is ${i}`);
 
@@ -101,13 +102,30 @@ console.log(`after the loop i is ${i}`);
  }
  console.log(`after the loop i is ${j}`);
 
- // continue statement skips the rest of the code in the loop and goes to next iteration
- for(let i=0; i<10; i++);{
- if(i==5){
-    console.log(`i is 5 so I am skipping the rest of the code in the loop`);
-    continue;
- }
- console.log(i);
+ //continue statement skips the rest of the code in the loop and goes to next iteration
+ //for(let i=0; i<10; i++);{
+   //if (i===5) { console.log(`i is 5 so I am skipping the rest of the code in the loop`);
+	//continue;
+ //}
+ //console.log(i);
+//}
+
+
+// lets explore more variations of for loops
+
+let total=0;
+for (let i=0; i<10; i+=3) {
+    console.log(`BEFORE i is ${i} and total is ${total}`);
+    total +=1;
+    console.log(`AFTER i is ${i} and total is ${total}`);
+}
+console.log(`After the loop total is ${total}`);
+
+
+//lets iterate over letters in  a string
+const myName = "Selina";
+for (let i=0; i< myName.length; i++) {
+    console.log(myName[i]);
 }
 
 
