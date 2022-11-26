@@ -34,7 +34,7 @@ header {
 header .brand {
     background: rgb(159, 174, 184);
     grid-area: brand;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: monospace;
 }
 
 header nav {
@@ -92,6 +92,7 @@ main .feature {
     background: rgb(255, 136, 154);
     grid-area: feature;
     text-align: center;
+    justify-self: center;
 }
 
 main .mobile-ad {
@@ -112,6 +113,7 @@ footer {
     background: LightSalmon;
     padding: 10px;
     grid-area: footer;
+    text-align: center;
 }
 
 /* Hide Sections which are not part of mobile */
@@ -199,6 +201,7 @@ footer {
     /* Change Sidebar Layout */
     .sidebar {
         display: grid;
+        text-align: center;
     }
 
     .mobile-ad img {
