@@ -1,10 +1,10 @@
 /* Define all sections */
 body {
-    background:rgb(159, 174, 184)
+    background:rgb(159, 174, 184);
     margin: 0;
     font-size: 1.5em;
-    text-align: center;
-    text-align:
+    /*text-align: center;*/
+    text-align: justify;
     height: 100vh;
 
     display: grid;
@@ -21,6 +21,7 @@ header {
     background: rgb(177, 195, 206);
     padding: 10px;
     grid-area: header;
+    text-align: center;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -64,6 +65,7 @@ header .tools {
 .intro .action {
     background: rgb(68, 255, 68);
     grid-area: action;
+    text-align: center;
 }
 
 .intro .feature {
@@ -83,23 +85,28 @@ main {
     grid-template-areas: 
         "feature"
         "ad"
-        "listing";
+        "paragraphs";
 }
 
 main .feature {
     background: rgb(255, 136, 154);
     grid-area: feature;
+    text-align: center;
 }
 
 main .mobile-ad {
     grid-area: ad;
 }
 
-main .listing {
+main .paragraphs {
     background: rgb(255, 136, 154);
     grid-area: listing;
 }
-
+.list:hover{
+    background-color: aquamarine;
+    box-shadow: 10px 10px 5px rgb(66, 62, 62);
+}
+    
 /* Footer section */
 footer {
     background: LightSalmon;
