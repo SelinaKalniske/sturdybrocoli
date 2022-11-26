@@ -1,9 +1,10 @@
 /* Define all sections */
 body {
-    background: LightGray;
+    background:rgb(159, 174, 184)
     margin: 0;
     font-size: 1.5em;
     text-align: center;
+    text-align:
     height: 100vh;
 
     display: grid;
@@ -17,7 +18,7 @@ body {
 
 /* Header section */
 header {
-    background: LightSkyBlue;
+    background: rgb(177, 195, 206);
     padding: 10px;
     grid-area: header;
 
@@ -30,18 +31,21 @@ header {
 }
 
 header .brand {
-    background: rgb(69, 184, 255);
+    background: rgb(159, 174, 184);
     grid-area: brand;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header nav {
-    background: rgb(69, 184, 255);
+    background: rgb(159, 174, 184);
     grid-area: nav;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header .tools {
-    background: rgb(69, 184, 255);
+    background: rgb(159, 174, 184);
     grid-area: tools;
+    font-family:Georgia, 'Times New Roman', Times, serif
 }
 
 /* intro section */
