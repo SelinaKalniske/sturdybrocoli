@@ -10,8 +10,8 @@ body {
     grid-gap: 10px;
     grid-template-areas:
         "header"
-        "hero"
-        "body"
+        "intro"
+        "main"
         "footer"
 }
 
@@ -44,8 +44,8 @@ header .tools {
     grid-area: tools;
 }
 
-/* Hero section */
-.hero {
+/* intro section */
+.intro {
     background: PaleGreen;
     padding: 10px;
     grid-area: hero;
@@ -57,12 +57,12 @@ header .tools {
         "action";
 }
 
-.hero .action {
+.intro .action {
     background: rgb(68, 255, 68);
     grid-area: action;
 }
 
-.hero .feature {
+.intro .feature {
     background: rgb(68, 255, 68);
     grid-area: feature;
 }
@@ -109,7 +109,7 @@ footer {
     display: none;
 }
 
-.hero .feature {
+.intro .feature {
     display: none;
 }
 
@@ -152,7 +152,7 @@ footer {
         grid-template-rows: auto auto 1fr auto auto;
         grid-template-areas:
             "header"
-            "hero"
+            "intro"
             "body"
             "sidebar"
             "footer";
@@ -166,13 +166,13 @@ footer {
     }
 
     /* Change Hero Layout */
-    .hero {
+    .intro {
         grid-template-areas:
             "feature"
             "action";
     }
 
-    .hero .feature {
+    .intro .feature {
         display: block;
     }
 
@@ -202,13 +202,13 @@ footer {
         grid-template-rows: auto auto 1fr auto;
         grid-template-areas:
             "header header"
-            "hero ad"
+            "intro ad"
             "body sidebar"
             "footer footer"
     }
 
-    /* Change Hero Layout */
-    .hero {
+    /* Change Intro Layout */
+    .intro {
         grid-template-columns: 2fr 1fr;
         grid-template-areas:
             "feature action"
