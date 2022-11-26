@@ -107,10 +107,16 @@ main .mobile-ad {
 main .listings {
     background: rgb(187,187,187);
     grid-area: listing;
+    text-align: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
 }
 .list:hover{
     background-color: rgb(70, 75, 73);
     box-shadow: 10px 10px 5px rgb(66, 62, 62);
+    color: rgb(255,165,0);
 }
     
 /* Footer section */
