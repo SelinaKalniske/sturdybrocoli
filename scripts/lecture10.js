@@ -164,4 +164,15 @@ switch(myString){
 }
 
 
+let result = 0;
+let i = 8
+do { 
+  result += i;
+  i++;
+} while (i < 5)
+console.log(result); //result?
+
+
+  
+
 

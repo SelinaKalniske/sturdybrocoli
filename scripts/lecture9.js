@@ -19,3 +19,11 @@ function updateName() {
   const resultsElement = document.querySelector('.results');
   resultsElement.textContent = `Updated at ${new Date()}`;
 }
+
+
+
+
+const element = document.getElementById("calc");
+element.onclick = function(){
+  console.log(element.id);
+};
