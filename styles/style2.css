@@ -2,7 +2,7 @@
 body {
     background:rgb(229, 233, 236);
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.4em;
     text-align: justify;
     height: 100vh;
     font-family:'Times New Roman', Times, serif;
@@ -18,7 +18,7 @@ body {
 
 /* Header section */
 header {
-    background: rgb(177, 195, 206);
+    background: rgb(238,238,238);
     padding: 10px;
     grid-area: header;
     text-align: center;
@@ -32,26 +32,26 @@ header {
 }
 
 header .brand {
-    background: rgb(159, 174, 184);
+    background: rgb(221,221,221);
     grid-area: brand;
     font-family:  Georgia, 'Times New Roman', Times, serif;
 }
 
 header nav {
-    background: rgb(159, 174, 184);
+    background: rgb(221,221,221);
     grid-area: nav;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header .tools {
-    background: rgb(159, 174, 184);
+    background: rgb(221,221,221);
     grid-area: tools;
     font-family:Georgia, 'Times New Roman', Times, serif
 }
 
 /* intro section */
 .intro {
-    background: PaleGreen;
+    background:rgba(221,221,221);
     padding: 10px;
     grid-area: intro;
 
@@ -63,19 +63,22 @@ header .tools {
 }
 
 .intro .action {
-    background: rgb(68, 255, 68);
+    background: rgb(204,204,204);
     grid-area: action;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .intro .feature {
-    background: rgb(68, 255, 68);
+    background: rgb(204,204,204);
     grid-area: feature;
 }
 
 /* Body section */
 main {
-    background: lightpink;
+    background: rgb(204,204,204);
     padding: 10px;
     grid-area: main;
 
@@ -89,9 +92,12 @@ main {
 }
 
 main .feature {
-    background: rgb(255, 136, 154);
+    background: rgb(187,187,187);
     grid-area: feature;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 main .mobile-ad {
@@ -99,17 +105,17 @@ main .mobile-ad {
 }
 
 main .listings {
-    background: rgb(179, 100, 113);
+    background: rgb(187,187,187);
     grid-area: listing;
 }
 .list:hover{
-    background-color: aquamarine;
+    background-color: rgb(70, 75, 73);
     box-shadow: 10px 10px 5px rgb(66, 62, 62);
 }
     
 /* Footer section */
 footer {
-    background: LightSalmon;
+    background: rgb(255,165,0);
     padding: 10px;
     grid-area: footer;
     text-align: center;
@@ -127,7 +133,7 @@ footer {
 
 /* Sidebar section */
 .sidebar {
-    background: BlanchedAlmond;
+    background: rgb(193, 192, 192);
     padding: 10px;
     grid-area: sidebar;
 
@@ -135,8 +141,12 @@ footer {
 }
 
 .sidebar .feature {
-    background: rgb(255, 208, 136);
+    background: rgb(255,165,0);
     height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 /* Other */
@@ -194,6 +204,7 @@ footer {
     .sidebar {
         display: grid;
         text-align: center;
+       
     }
 
     .mobile-ad img {
