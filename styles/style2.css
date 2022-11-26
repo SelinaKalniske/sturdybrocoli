@@ -1,11 +1,11 @@
 /* Define all sections */
 body {
-    background:rgb(159, 174, 184);
+    background:rgb(229, 233, 236);
     margin: 0;
     font-size: 1.5em;
-    /*text-align: center;*/
     text-align: justify;
     height: 100vh;
+    font-family:'Times New Roman', Times, serif;
 
     display: grid;
     grid-gap: 10px;
@@ -34,7 +34,7 @@ header {
 header .brand {
     background: rgb(159, 174, 184);
     grid-area: brand;
-    font-family: monospace;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
 }
 
 header nav {
@@ -85,22 +85,21 @@ main {
     grid-template-areas: 
         "feature"
         "ad"
-        "paragraphs";
+        "listing";
 }
 
 main .feature {
     background: rgb(255, 136, 154);
     grid-area: feature;
     text-align: center;
-    justify-self: center;
 }
 
 main .mobile-ad {
     grid-area: ad;
 }
 
-main .paragraphs {
-    background: rgb(255, 136, 154);
+main .listings {
+    background: rgb(179, 100, 113);
     grid-area: listing;
 }
 .list:hover{
@@ -151,13 +150,6 @@ footer {
     width: 350px;
 }
 
-.mobile-ad:hover {
-    opacity: 0.5;
-}
-
-.desktop-ad:hover {
-    opacity: 0.5;
-}
 
 /* Tablet friendly layout */
 @media (min-width: 576px) {
