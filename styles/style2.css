@@ -14,6 +14,7 @@ body {
         "footer"
 }
 
+
 /* HEADER */
 header {
     background: rgb(238,238,238);
@@ -74,6 +75,7 @@ header .tools {
     grid-area: feature;
 }
 
+
 /* MAIN */
 main {
     background: rgb(204,204,204);
@@ -125,7 +127,7 @@ footer {
     text-align: center;
 }
 
-/* Hide Sections which are not part of mobile */
+/* Hide Sections */
 .desktop-ad {
     grid-area: ad;
     display: none;
@@ -153,7 +155,7 @@ footer {
     display: flex;
 }
 
-/* Other */
+/* OTHER*/
 .mobile-ad img {
     vertical-align: top;
     width: 100%;
@@ -216,8 +218,10 @@ footer {
     }
 }
 
-/* DESKTOP layout */
-@media (min-width: 992px) {
+
+
+     /* DESKTOP layout */
+    @media (min-width: 992px) {
     body {
         grid-template-columns: 1fr 350px;
         grid-template-rows: auto auto 1fr auto;
