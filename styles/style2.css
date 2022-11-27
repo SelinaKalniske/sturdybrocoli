@@ -1,7 +1,5 @@
-/* Define all sections */
 body {
     background:rgb(229, 233, 236);
-    margin: 0;
     font-size: 1.4em;
     text-align: justify;
     height: 100vh;
@@ -16,7 +14,7 @@ body {
         "footer"
 }
 
-/* Header section */
+/* HEADER */
 header {
     background: rgb(238,238,238);
     padding: 10px;
@@ -49,7 +47,7 @@ header .tools {
     font-family:Georgia, 'Times New Roman', Times, serif
 }
 
-/* intro section */
+/* INTRO */
 .intro {
     background:rgba(221,221,221);
     padding: 10px;
@@ -76,7 +74,7 @@ header .tools {
     grid-area: feature;
 }
 
-/* Body section */
+/* MAIN */
 main {
     background: rgb(204,204,204);
     padding: 10px;
@@ -104,7 +102,7 @@ main .mobile-ad {
     grid-area: ad;
 }
 
-main .listings {
+main .paragraphs {
     background: rgb(187,187,187);
     grid-area: listing;
     text-align: center;
@@ -119,7 +117,7 @@ main .listings {
     color: rgb(255,165,0);
 }
     
-/* Footer section */
+/* FOOTER */
 footer {
     background: rgb(255,165,0);
     padding: 10px;
@@ -137,7 +135,7 @@ footer {
     display: none;
 }
 
-/* Sidebar section */
+/* SIDEBAR */
 .sidebar {
     background: rgb(193, 192, 192);
     padding: 10px;
@@ -167,7 +165,7 @@ footer {
 }
 
 
-/* Tablet friendly layout */
+/* TABLET layout */
 @media (min-width: 576px) {
     body {
         grid-template-rows: auto auto 1fr auto auto;
@@ -179,14 +177,14 @@ footer {
             "footer";
     }
 
-    /* Change Header Layout */
+    /* HEADER (tablet) */
     header {
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-areas:
             "brand nav tools";
     }
 
-    /* Change Intro Layout */
+    /* INTRO (tablet) */
     .intro {
         grid-template-areas:
             "feature"
@@ -197,7 +195,7 @@ footer {
         display: block;
     }
 
-    /* Change Main Layout */
+    /* MAIN (tablet) */
     main {
         grid-template-columns: 1fr 200px;
         grid-template-rows: auto 1fr;
@@ -206,7 +204,7 @@ footer {
             "listing listing";
     }
 
-    /* Change Sidebar Layout */
+    /* SIDEBAR (tablet) */
     .sidebar {
         display: grid;
         text-align: center;
@@ -218,7 +216,7 @@ footer {
     }
 }
 
-/* Desktop friendly layout */
+/* DESKTOP layout */
 @media (min-width: 992px) {
     body {
         grid-template-columns: 1fr 350px;
@@ -230,14 +228,14 @@ footer {
             "footer footer"
     }
 
-    /* Change Intro Layout */
+    /* INTRO (desktop) */
     .intro {
         grid-template-columns: 2fr 1fr;
         grid-template-areas:
             "feature action"
     }
 
-    /* Change Main Layout */
+    /* MAIN (desktop) */
     main {
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr;
