@@ -108,7 +108,6 @@ main .paragraphs {
     background: rgb(187,187,187);
     grid-area: listing;
     text-align: center;
-    text-align: center;
     justify-content: center;
     align-items: center;
     display: grid;
