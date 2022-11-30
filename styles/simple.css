@@ -1,0 +1,13 @@
+/* box sizing reset */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: antiquewhite;
+}
+
