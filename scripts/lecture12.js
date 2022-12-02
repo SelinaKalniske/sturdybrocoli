@@ -80,4 +80,11 @@ console.log(`Hello ${name} you are ${age} years old`);
 costumHello3("Selina", 23)
 costumHello3("Davis")
 
+//functions with default parametrs and can return value
+
+function add2(a=2, b=3) {
+    return a+b
+}
+result = add2(10,20);
+console.log(`the result of adding 10 and 20 is ${result}`);
 
