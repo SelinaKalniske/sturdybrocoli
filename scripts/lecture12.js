@@ -18,13 +18,22 @@ for(let i=0; i<10; i++){
 function costumHello(name) {
     console.log(`Hello ${name}`);
 }
+//functions can take multiple parametrs
+function costumeHello2(name, age) {
+    console.log(`Hello ${name} you are ${age} years old`)
+}
+
 costumHello('Selina');
 costumHello('Davis');
 costumHello('Kristiana');
 costumHello('Veniamins');
 
-//functions can take multiple parametrs
+//we can use a function to calculate the area of a rectangle
 
-function costumeHello2(name, age) {
-    console.log(`Hello ${name} you are ${age} years old`)
+function areaOfRectangle(width,height) {
+    let area=width*height;
+    console.log(`The area of regtangle with width ${width} and height ${height} is ${area}`);
 }
+
+areaOfRectangle(10,20);
+areaOfRectangle(5,10);
