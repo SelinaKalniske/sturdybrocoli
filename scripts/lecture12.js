@@ -88,3 +88,4 @@ function add2(a=2, b=3) {
 result = add2(10,20);
 console.log(`the result of adding 10 and 20 is ${result}`);
 
+//
