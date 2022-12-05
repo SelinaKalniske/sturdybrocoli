@@ -102,3 +102,15 @@ console.log(`The result of my arrow function is ${myResult}`);
 let myArrowFun2=()=>{console.log("just a simple arrow function");};
 myArrowFun2();
 
+//ideas behind annonymous functions are that we can create function on the fly and pass it onto another
+
+const btn = document.querySelector('button');
+
+function random(number) {
+  return Math.floor(Math.random() * (number+1));
+}
+
+btn.addEventListener('click', () => {
+  const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+  document.body.style.backgroundColor = rndCol;
+});
