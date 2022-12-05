@@ -109,8 +109,15 @@ const btn = document.querySelector('button');
 function random(number) {
   return Math.floor(Math.random() * (number+1));
 }
-
+//click event is specified - we use annonymous function to handle the click event
 btn.addEventListener('click', () => {
   const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
   document.body.style.backgroundColor = rndCol;
+});
+
+//usualy we will have a function to add multiple event listeners
+
+const boomBtn=document.querySelector('.big-boom');
+boomBtn.addEventListener('click', () =>{
+    document.body.style.backgroundColor='black';
 });
