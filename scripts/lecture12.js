@@ -98,3 +98,7 @@ let myArrowFun=(a,b,c)=> a+b+c;
 let myResult=myArrowFun(1,2,3);
 console.log(`The result of my arrow function is ${myResult}`);
 
+
+let myArrowFun2=()=>{console.log("just a simple arrow function");};
+myArrowFun2();
+
