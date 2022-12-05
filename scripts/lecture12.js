@@ -88,4 +88,13 @@ function add2(a=2, b=3) {
 result = add2(10,20);
 console.log(`the result of adding 10 and 20 is ${result}`);
 
-//
+//functions can be annonymous
+//let myFun= function(){
+   // console.log("Hello from annonymous function");
+//}
+
+//arrow functions are a good way to writw annonymous functions
+let myArrowFun=(a,b,c)=> a+b+c;
+let myResult=myArrowFun(1,2,3);
+console.log(`The result of my arrow function is ${myResult}`);
+
