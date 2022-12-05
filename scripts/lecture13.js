@@ -1,4 +1,4 @@
-console.log("Hnadling some input event");
+console.log("Handling some input event");
 
 //function that will handle click event
 
@@ -9,5 +9,5 @@ function handleButtonClick() {
 //const btn=document.querySelector('button');
 
 //better to use more specific selector
-const btn=document.querySelector('myButton'); //will select button with ID myButton
+const btn=document.querySelector('#myButton'); //will select button with ID myButton
 btn.addEventListener('click', handleButtonClick);
