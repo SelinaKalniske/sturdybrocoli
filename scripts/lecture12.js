@@ -126,3 +126,9 @@ const resetBtn=document.querySelector('.reset-boom');
 resetBtn.addEventListener('click', () =>{
     document.body.style.backgroundColor='white';
 });
+
+
+//good practise is to have main called document is loaded
+//for this we use an event Listener
+document.addEventListener('DOMContentLoaded', main);
+main();
