@@ -121,3 +121,8 @@ const boomBtn=document.querySelector('.big-boom');
 boomBtn.addEventListener('click', () =>{
     document.body.style.backgroundColor='black';
 });
+
+const resetBtn=document.querySelector('.reset-boom');
+resetBtn.addEventListener('click', () =>{
+    document.body.style.backgroundColor='white';
+});
