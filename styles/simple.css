@@ -11,3 +11,31 @@ main {
     background-color: antiquewhite;
 }
 
+.cont {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.new-element{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(189, 142, 142);
+    border: 1px solid rgb(66, 56, 56);
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    margin: 5px;
+}
+
+.new-element:hover{
+    box-shadow: 0 0 5px 5px rgb(80, 73, 73);
+}
+
+/* lets create separate backgrounds fo even and odd classes */
+.new-element.even{
+    background-color: aquamarine;
+}
+.new-element.odd{
+    background-color: bisque;
+}
