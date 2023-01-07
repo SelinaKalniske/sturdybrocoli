@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz homework</title>
+    <script src="scripts/fizzbuzz.js" defer></script>
+    <link rel="stylesheet" href="styles/simple.css">
+</head>
+    <body>
+        <h1>FizzBuzz generator</h1>
+        <div class="navContainer">
+          <label>MIN number: </label><input type="number" name="field"  id="minInput"  min="1" max="99" onpaste="return false">
+          <label>MAX number: </label><input type="number" name="field"  id="maxInput"  min="2" max="100" onpaste="return false">
+          <button id="resetButton">RESET</button>
+          <button id="refreshButton">REFRESH</button>
+          <button id="fizzButton">FIZZ</button>
+          <button id="buzzButton">BUZZ</button>
+          <button id="fizzbuzzButton">FIZZBUZZ</button>
+        </div>
+        
+        <div class="cont" id="container">
+          <script>
+            const container = document.querySelector('#container');
+            for (let i = 0; i < 100; i++) {
+              const div = document.createElement('div');
+              container.appendChild(div);
+            }
+          </script>
+        </div>
+        
+        <hr>
+
+        <footer>Selina Kalniske (C) 2023</footer>
+  </body>
+
+</html>

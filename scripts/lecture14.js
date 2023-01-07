@@ -28,17 +28,22 @@ function addElement(containerElement) {
     parentElement.appendChild(newElement);
 }
 
-//lets make a flexible function to add any number of elements
-function addElement(numElements){
-    //use loop tp add multiple elements
-    for (let i=0; i< numElements; i++){
+// lets add flexible function to add any number of elements
+function addElements(numElements){
+    //use loop to add multiple elements
+    for (let i=0; i<numElements; i++){
         addElement();
     }
 }
-// function to add 10 elements
+// lets add 10 element function
 function add10Elements(){
-    addElement(10);
+    addElements(10);
 }
+
+//TODO function that reads button value and add that many elements-more universal solution
+
+
+
 
 // lets make a function to remove last element from container
  function removeElement(){
@@ -53,6 +58,25 @@ function add10Elements(){
     }
  }
   
+// function for removing ALL elements
+function removeAllElements(){
+    console.log("Removing all elements");
+    //container element
+    const parentElement=document.getElementById("container");
+    //get the last child remove of the container
+    // we need to use let since we will change the value of lastChild
+    let lastChild=parentElement.lastElementChild;
+    //loop to remove all elements
+    while (lastChild !== null){
+        console.log("Removing last child: " +lastChild.innerText)
+        parentElement.removeChild(lastChild);
+        //get new last child
+        lastChild=parentElement.lastElementChild;
+    }
+ //we could have gotten only specific children and removed them using querySelectorAll
+}
+
+
 // lets make a function to add listeners
 function addListeners(){
 console.log("Adding listeners")
@@ -60,9 +84,12 @@ const addButton=document.getElementById("addButton")
 addButton.addEventListener("click", addElement);
 const removeButton=document.getElementById("removeButton");
 removeButton.addEventListener("click", removeElement);
-// lets add 10 elements button
+//lets add 10 element button
 const add10Button=document.getElementById("add10Button");
 add10Button.addEventListener("click", add10Elements);
+//add remove all elements button
+const removeAllButton=document.getElementById("removeAllButton");
+removeAllButton.addEventListener("click", removeAllElements);
 }
 
 //lets make main function, because its better to add listener when the page loads

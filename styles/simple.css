@@ -14,12 +14,55 @@ main {
 .cont {
     display: flex;
     flex-wrap: wrap;
+    
+}
 
+
+.fizbuz{
+    background-color: rgb(30, 173, 75);
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgb(66, 56, 56);
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    margin: 5px;
+}
+
+.fiz{
+    background-color: rgb(45, 26, 173);
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgb(66, 56, 56);
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    margin: 5px;
+}
+
+.buz{
+    background-color: rgb(194, 220, 23);
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    margin: 5px;
+}
+
+.num{
+    background-color: rgb(166, 169, 148);
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    margin: 5px;
 }
 
 .new-element{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background-color: rgb(189, 142, 142);
     border: 1px solid rgb(66, 56, 56);
     border-radius: 5px;
