@@ -23,12 +23,27 @@ function addElement(containerElement) {
     parentElement.appendChild(newElement);
 }
 
+// lets make a function to remove last element from container
+ function removeElement(){
+    const parentElement=document.getElementById("container");
+    const lastChild=parentElement.lastElementChild;
+    //lets remove last child only if its exists
+    if (lastChild==null){
+    console.log("No more elements to remove!");
+    } else{
+        console.log("Removing last child " + lastChild.innerText);
+        parentElement.removeChild(lastChild);
+    }
+ }
+  
 
 //lets make main function, because its better to add listener when the page loads
 function main(){
 console.log("main function called");
 const addButton=document.getElementById("addButton")
 addButton.addEventListener("click", addElement);
+const removeButton=document.getElementById("removeButton");
+removeButton.addEventListener("click", removeElement);
 }
  
 //lets attach main to the window load event
