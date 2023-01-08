@@ -66,60 +66,29 @@ startValueInput.addEventListener('change', function() {
   });
   
 
-
 // RESET  BUTTON
   resetButton.addEventListener('click', function() {
     // Reset the start and end values to their default values
     document.querySelector('#start-value').value = 1;
-    document.querySelector('#end-value').value = 100;
-  
-    // Update the div elements
-    updateDivs();
-    
+    document.querySelector('#end-value').value = 100; 
   });
 
 
-// FIZZ BUTTON
-  const fizzButton = document.getElementById('fizzButton');
-  fizzButton.addEventListener('click', function() {
+//FIZZ BUTTON
+$(document).ready(function(){
+  $("#fizzButton").click(function(){ 
+    $(".buzz, .other, .fizzbuzz").toggle();
   });
-  
-  fizzButton.addEventListener('click', function() {
-    // Select all divs with the class "fizz"
-    const fizzDivs = document.querySelectorAll('.fizz');
-  
-    // Change the background color of the "fizz" divs to green
-    for (const div of fizzDivs) {
-      div.style.backgroundColor = 'red';
-    }
-  });
+});
   
 //BUZZ BUTTON
-const buzzButton = document.getElementById('buzzButton');
-buzzButton.addEventListener('click', function() {
+$(document).ready(function(){ $("#buzzButton").click(function(){ 
+  $(".other, .fizz, .fizzbuzz").toggle();
 });
-buzzButton.addEventListener('click', function() {
-    // Select all divs with the class "buzz"
-    const buzzDivs = document.querySelectorAll('.buzz');
-  
-    // Change the background color of the "buzz" divs to blue
-    for (const div of buzzDivs) {
-      div.style.backgroundColor = 'blue';
-    }
-  });
+});
   
 //FIZZBUZZ BUTTON
-const fizzbuzzButton = document.getElementById('fizzbuzzButton');
-fizzbuzzButton.addEventListener('click', function() {
+$(document).ready(function(){ $("#fizzbuzzButton").click(function(){ 
+  $(".other, .fizz, .buzz").toggle();
 });
-fizzbuzzButton.addEventListener('click', function() {
-    // Select all divs with the class "fizzbuzz"
-    const fizzbuzzDivs = document.querySelectorAll('.fizzbuzz');
-  
-    // Change the background color of the "fizzbuzz" divs to yellow
-    for (const div of fizzbuzzDivs) {
-      div.style.backgroundColor = 'orange';
-    }
-  });
-  
-
+});

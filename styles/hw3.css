@@ -9,6 +9,18 @@ main{
 body{
     background-color: beige;
 }
+.navContainer {
+    margin-top: 2%;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr) ) ;
+    grid-gap: 10px;
+    align-content: center;
+    justify-items: center;
+    
+}
+
 .fizzbuzz{
     background: #ffcbcb; 
     width: 100px;
