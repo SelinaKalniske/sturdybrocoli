@@ -8,14 +8,21 @@
     </title>
     <script src="scripts/fizbuz.js" defer></script>
     <link rel="stylesheet" href="styles/hw3.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <h1>fizbuz</h1>
+    <form>
+        <label for="start-value">Start Value:</label>
+        <input type="number" id="start-value" value="1" min="1" max="99">
+        <label for="end-value">End Value:</label> 
+        <input type="number" id="end-value" value="100" min="" max="100">
+        <br>
+      </form>
+      
     <div class="navContainer">
-        <label>MIN number: </label><input type="number" name="field"  id="minInput"  min="1" max="99" onpaste="return false">
-        <label>MAX number: </label><input type="number" name="field"  id="maxInput"  min="2" max="100" onpaste="return false">
         <button id="resetButton">RESET</button>
-        <button id="refreshButton">REFRESH</button>
+        <button onclick="window.location.reload();" id="refreshButton">REFRESH</button>
         <button id="fizzButton">FIZZ</button>
         <button id="buzzButton">BUZZ</button>
         <button id="fizzbuzzButton">FIZZBUZZ</button>
