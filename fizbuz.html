@@ -4,28 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fizbuz
-    </title>
+    <title> FIZZBUZZ GENERATOR </title>
     <script src="scripts/fizbuz.js" defer></script>
     <link rel="stylesheet" href="styles/hw3.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <h1>fizbuz</h1>
+    <h1>FIZZBUZZ GENERATOR</h1>
     <form>
         <label for="start-value">Start Value:</label>
         <input type="number" id="start-value" value="1" min="1" max="99">
         <label for="end-value">End Value:</label> 
-        <input type="number" id="end-value" value="100" min="" max="100">
+        <input type="number" id="end-value" value="100" min="2" max="100">
         <br>
       </form>
       
     <div class="navContainer">
-        <button id="resetButton">RESET</button>
-        <button onclick="window.location.reload();" id="refreshButton">REFRESH</button>
-        <button id="fizzButton">FIZZ</button>
-        <button id="buzzButton">BUZZ</button>
-        <button id="fizzbuzzButton">FIZZBUZZ</button>
+        <button class="glow-on-hover"  id="resetButton">RESET</button>
+        <button class="glow-on-hover"  onclick="window.location.reload();" id="refreshButton">REFRESH</button>
+        <button class="glow-on-hover"  id="fizzButton">FIZZ</button>
+        <button class="glow-on-hover"  id="buzzButton">BUZZ</button>
+        <button class="glow-on-hover"  id="fizzbuzzButton">FIZZBUZZ</button>
       </div>
     <main id="main"></main>
 </body>

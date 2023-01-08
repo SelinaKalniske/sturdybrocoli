@@ -18,13 +18,13 @@ for (let i = 1; i <= 100; i++) {
     // Set the div's inner text based on the conditions specified
     if (i % 3 === 0 && i % 5 === 0) {
       div.classList.add('fizzbuzz');
-      div.innerText = 'FizzBuzz';
+      div.innerText = i + ' = FizzBuzz';
     } else if (i % 3 === 0) {
       div.classList.add('fizz');
-      div.innerText = 'Fizz';
+      div.innerText = i + ' = Fizz';
     } else if (i % 5 === 0) {
       div.classList.add('buzz');
-      div.innerText = 'Buzz';
+      div.innerText = i +' = Buzz';
     } else {
       div.classList.add('other');
       div.innerText = i;
