@@ -25,6 +25,7 @@ function createDivs(event) {
   } else {
     document.getElementById('main').innerHTML = '';
     for (let i = startValue; i <= endValue; i++) {
+      console.log("You inserted values!");
       const div = document.createElement('div');
       // Set the div's unique id
       div.id = `myid${i}`;
@@ -60,19 +61,22 @@ function createDivs(event) {
 //FIZZ BUTTON
 $(document).ready(function(){
   $("#fizzButton").click(function(){ 
+    console.log("Fizz values");
     $(".buzz, .other, .fizzbuzz").toggle();
   });
 });
-console.log("#fizzButton");
+
   
 //BUZZ BUTTON
 $(document).ready(function(){ $("#buzzButton").click(function(){ 
+  console.log("Buzz values");
   $(".other, .fizz, .fizzbuzz").toggle();
 });
 });
   
 //FIZZBUZZ BUTTON
 $(document).ready(function(){ $("#fizzbuzzButton").click(function(){ 
+  console.log("Fizzbuzz values");
   $(".other, .fizz, .buzz").toggle();
 });
 });
