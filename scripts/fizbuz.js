@@ -9,63 +9,46 @@ const resetButton = document.querySelector('#resetButton');
 const refreshButton = document.getElementById('refreshButton');
 const div = document.querySelectorAll('div');
 
+document.querySelector('form').addEventListener('submit', createDivs);
 
-for (let i = 1; i <= 100; i++) {
-    const div = document.createElement('div');
-    // Set the div's unique id
-    div.id = `myid${i}`;
+function createDivs(event) {
+  // prevent the form from being submitted
+  event.preventDefault();
 
-    // Set the div's inner text based on the conditions specified
-    if (i % 3 === 0 && i % 5 === 0) {
-      div.classList.add('fizzbuzz');
-      div.innerText = i + ' = FizzBuzz';
-    } else if (i % 3 === 0) {
-      div.classList.add('fizz');
-      div.innerText = i + ' = Fizz';
-    } else if (i % 5 === 0) {
-      div.classList.add('buzz');
-      div.innerText = i +' = Buzz';
-    } else {
-      div.classList.add('other');
-      div.innerText = i;
-    }
-  
-    document.getElementById('main').appendChild(div);
-  }
+  // get the start and end values from the form fields
+  const startValue = document.querySelector('#start-value').value;
+  const endValue = document.querySelector('#end-value').value;
 
-
-  // MIN and MAX value button
-  function updateDivs() {
-    // Get the start and end values from the controls
-const startValue = document.querySelector('#start-value').value;
-const endValue = document.querySelector('#end-value').value;
-  
-    // Generate the div elements
+  // create the div elements with the specified range of values
+  if (!startValue || !endValue || isNaN(startValue) || isNaN(endValue) || startValue > endValue) {
+    console.log("Wrong values inserted!")
+  } else {
+    document.getElementById('main').innerHTML = '';
     for (let i = startValue; i <= endValue; i++) {
-      // Create a new div element
       const div = document.createElement('div');
-    }  
+      // Set the div's unique id
+      div.id = `myid${i}`;
+
+      // Set the div's inner text based on the conditions specified
+      if (i % 3 === 0 && i % 5 === 0) {
+        div.classList.add('fizzbuzz');
+        div.innerText = i + ' = FizzBuzz';
+      } else if (i % 3 === 0) {
+        div.classList.add('fizz');
+        div.innerText = i + ' = Fizz';
+      } else if (i % 5 === 0) {
+        div.classList.add('buzz');
+        div.innerText = i +' = Buzz';
+      } else {
+        div.classList.add('other');
+        div.innerText = i;
+      }
+      document.getElementById('main').appendChild(div);
+    }
+  }
 }
 
-// Update the div elements when the start or end values change
-document.querySelector('#start-value').addEventListener('change', updateDivs);
-document.querySelector('#end-value').addEventListener('change', updateDivs);
-// Initialize the div elements
-updateDivs();
   
-const startValueInput = document.querySelector('#start-value');
-const endValueInput = document.querySelector('#end-value');
-startValueInput.addEventListener('change', function() {
-    // Set the minimum value of the second input to the value of the first input
-    endValueInput.min = startValueInput.value;
-  });
-
-  endValueInput.addEventListener('change', function() {
-    // Set the maximum value of the first input to the value of the second input
-    startValueInput.max = endValueInput.value;
-  });
-  
-
 // RESET  BUTTON
   resetButton.addEventListener('click', function() {
     // Reset the start and end values to their default values
@@ -80,6 +63,7 @@ $(document).ready(function(){
     $(".buzz, .other, .fizzbuzz").toggle();
   });
 });
+console.log("#fizzButton");
   
 //BUZZ BUTTON
 $(document).ready(function(){ $("#buzzButton").click(function(){ 
